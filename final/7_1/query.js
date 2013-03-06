@@ -1,5 +1,5 @@
 use test
-db.enron.aggregate([
+db.messages.aggregate([
   {$unwind: "$headers.To"},
   {$match: 
     {
